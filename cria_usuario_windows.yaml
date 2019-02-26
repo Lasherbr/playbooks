@@ -1,0 +1,11 @@
+- hosts: windows
+  tasks:
+  - name: Cria usuario novo
+    win_user:
+     inameuser: "{{ usuario }}"
+     password: "abc@123!"
+     state: present
+     groups:
+      - Users
+      - Administrators
+

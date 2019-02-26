@@ -3,7 +3,7 @@
   - name: Cria usuario novo
     win_user:
      name: "{{ usuario }}"
-     password: "abc@123!"
+     password: "{{ senha }}"
      state: present
      groups:
       - Users
